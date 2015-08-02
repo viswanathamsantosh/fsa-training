@@ -1,5 +1,5 @@
-title: Course in a Box
-description: Build Your Very Own Open Course
+title: FSA Training
+description: This is the training modules for FSAs to be integrated with mozilla-community-edu
 modules: [start, community, learning, content, feedback, references]
 signups:
  - name: Geert Hofman
