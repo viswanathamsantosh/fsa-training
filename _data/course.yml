@@ -1,6 +1,6 @@
 title: FSA Training
 description: This is the training modules for FSAs to be integrated with mozilla-community-edu
-modules: [fsa, test]
+modules: [start, community, learning, content, feedback, references]
 submodules: [beginners, events_management, public_speaking, club_lead_training]
 submodule_display_name:
 module_content: topic
