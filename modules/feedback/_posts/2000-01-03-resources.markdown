@@ -1,5 +1,5 @@
 ---
-title: Get connected
+title: Resources
 published: true
 ---
 

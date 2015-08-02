@@ -1,5 +1,5 @@
 ---
-title: Mozilla 101
+title: Outcomes
 ---
 
 # Feedback as a form of assessment
