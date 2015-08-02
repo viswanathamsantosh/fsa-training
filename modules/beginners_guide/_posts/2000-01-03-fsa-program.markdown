@@ -1,5 +1,5 @@
 ---
-title: Concepts
+title: The Firefox Student Ambassadors Program
 published: true
 ---
 

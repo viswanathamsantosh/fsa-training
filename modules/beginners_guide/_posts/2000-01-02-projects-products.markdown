@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Mozilla Projects and Products
 published: true
 extra_js:
  - '/js/discourseGallery.js'
