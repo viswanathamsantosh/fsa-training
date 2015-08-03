@@ -1,5 +1,5 @@
 ---
-title: Create your course
+title: The FSA Program
 ---
 
 ## Taking your course out of the box

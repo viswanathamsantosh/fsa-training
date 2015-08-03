@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Work on the logistics
 excerpt: "Find out why community is important in learning something new, what makes robust communities tick, and start co-designing your course."
 published: true
 ---

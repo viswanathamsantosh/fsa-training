@@ -1,5 +1,5 @@
 ---
-title: Form the core team
+title: Introduction
 excerpt: "Find out why community is important in learning something new, what makes robust communities tick, and start co-designing your course."
 ---
 

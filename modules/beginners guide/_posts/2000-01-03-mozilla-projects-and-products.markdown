@@ -1,11 +1,11 @@
 ---
-title: Introduce yourself
+title: Mozilla Projects and Products
 extra_js:
   - '/js/discourseGallery.js'
   - '/js/discourseposters.js'
 ---
 
-# Introduce yourself
+# Mozilla Projects and Products
 
 <div id="topic-users">
     <span>

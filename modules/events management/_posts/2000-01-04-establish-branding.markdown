@@ -1,5 +1,5 @@
 ---
-title: "Discuss"
+title: Establish branding
 extra_js:
  - '/js/discourseGallery.js'
  - '/js/category-gallery.js'

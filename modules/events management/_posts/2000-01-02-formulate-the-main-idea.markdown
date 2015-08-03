@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Formulate the main idea
 published: true
 ---
 

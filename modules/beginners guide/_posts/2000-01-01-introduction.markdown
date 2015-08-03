@@ -1,8 +1,8 @@
 ---
-title: How will this course work?
+title: Introduction
 ---
 
-# How will this course work?
+# Welcome to the FSA Beginner's Guide!
 
 {% comment %}
 ![Image of maze with starting point indicated]({{site.baseurl}}/img/start.jpg)

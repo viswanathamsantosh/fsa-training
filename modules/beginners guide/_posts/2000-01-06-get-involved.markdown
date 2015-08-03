@@ -1,5 +1,5 @@
 ---
-title: Create your course
+title: Get Involved
 ---
 
 ## Taking your course out of the box

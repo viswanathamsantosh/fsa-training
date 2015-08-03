@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Event execution
 excerpt: "Find out why community is important in learning something new, what makes robust communities tick, and start co-designing your course."
 published: true
 ---

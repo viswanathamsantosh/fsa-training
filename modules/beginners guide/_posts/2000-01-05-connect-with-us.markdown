@@ -1,5 +1,5 @@
 ---
-title: Create your course
+title: Connect with us
 ---
 
 ## Taking your course out of the box
