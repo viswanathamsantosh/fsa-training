@@ -4,33 +4,14 @@ title: Introduction
 
 # Welcome to the FSA Beginner's Guide!
 
-{% comment %}
-![Image of maze with starting point indicated]({{site.baseurl}}/img/start.jpg)
-Image [CC-BY-SA](https://creativecommons.org/licenses/by-sa/2.0/) by [mikecogh](https://www.flickr.com/photos/mikecogh/11300349426) on Flickr.
-{% endcomment %}
+Hi there! So we heard you just became a Firefox Student Ambassador. Congratulations! You are now part of a passionate, unconventional, smart, fun, and incredible group of students out there changing the world. Before we get started with any FSA-related activties, let's get you equipped with the basic things that you need to  know about Mozilla and the FSA program.
 
-The course is split in 4 modules: **community**, **learning on the web**, **content** and **feedback and assessment**.
+We start with the Beginner's Guide, the basic guide that all FSAs must read. It is split into 5 parts: **learning about Mozilla**, **knowing Mozilla's projects and products**, **knowing the FSA program**, **connect with us through the FSA communication channels** and **how to get involved with Mozilla beyond the FSA program**.
 
-![Image of lego people]({{site.baseurl}}/img/modules.jpg)
-Leftmost image, [CC-BY-SA](https://creativecommons.org/licenses/by/2.0/) [Peter Dutton](https://www.flickr.com/photos/joeshlabotnik/) 
+## Speak up!
 
-Each module has outcomes directly related to building your course. Every module also have projects, reading and other resources to help you.
+At Mozilla, speaking up your mind is vital in ensuring that we activate healthy participation. If you have any questions or suggestions about the things presented here for your learning, don't hesitate to:
 
-## Work at your own pace, but not alone!
+Discuss at the [FSA Discourse forum](https://discourse.mozilla-community.org/c/firefox-student-ambassadors)
 
-![]({{site.baseurl}}/img/cohort.png)
-
-This is a self paced course. We tried to match the level of effort required for each module to be about 1 week, but you can always go through it quicker or slower.
-
-**Doing the course at your own pace does not mean that you have to do the course on your own.** From past experience we know that people who create courses together are much more likely to succeed and enjoy doing it. Doing it alone can easily feel like pulling teeth.
-
-## The course forum (community.p2pu.org)
-
-[community.p2pu.org](http://community.p2pu.org) is where the community for this course gathers. Here you can ask any question, share your work or other interesting readings and meet people who are also building online courses to collaborate with.
-
-[![]({{site.baseurl}}/img/community-forum.png)](http://community.p2pu.org)
-
-## Where do I go from here?
-
-1. [Introduce yourself]({{site.baseurl}}/modules/start/introduce-yourself/) on the forums.
-2. [Start building your course]({{site.baseurl}}/modules/start/create-your-course/). This step is not optional :)
+Send us an e-mail at firefoxstudents[at]mozilla.com.
