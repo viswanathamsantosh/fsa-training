@@ -2,7 +2,7 @@ HOW TO START
 
     Fork the repo by clicking the fork button.
     create a folder (any), go into it.
-    git clone https://github.com/kumarrishav/bikeSHED [Repo cloned]
+    git clone https://github.com/viswanathamsantosh/fsa-training [Repo cloned]
     git remote add origin https://github.com/your_username/fsa-traning [this is used for sending patch/code]
     git remote add upstream https://github.com/fayetandog/fsa-training [this is used for updating your code from master]
 
