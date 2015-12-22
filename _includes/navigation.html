@@ -12,18 +12,6 @@
 	<div class="container">
 		<div class="collapse navbar-collapse" id="p2pu-menu">
 			<ul class="nav navbar-nav">
-				{% for link in navigation %}
-					{% assign active = nil %}
-
-					{% for sublink in link.submenu %}
-						{% if page.url contains sublink.url %}
-							{% assign active = 'active' %}
-						{% endif %}
-					{% endfor %}
-
-					{% if page.url contains link.url %}
-						{% assign active = 'active' %}
-					{% endif %}
 				
 				<li>
 					<a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
@@ -37,6 +25,12 @@
 						</a>
 					</li>
 				{% endfor %}
+				
+				{% for link in navigation %}
+					{% assign active = nil %}
+					{% if page.url contains link.url %}
+						{% assign active = 'active' %}
+					{% endif %}
 				<li class="dropdown has-subnav {{ active }}">
 					<a href="{{ site.baseurl }}/">Activities To Do</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
