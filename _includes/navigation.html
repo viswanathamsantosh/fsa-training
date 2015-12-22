@@ -26,11 +26,11 @@
 					</li>
 				{% endfor %}
 				
-				{% for link in navigation %}
-					{% assign active = nil %}
-					{% if page.url contains link.url %}
-						{% assign active = 'active' %}
-					{% endif %}
+				
+				{% assign active = nil %}
+				{% if page.url contains link.url %}
+					{% assign active = 'active' %}
+				{% endif %}	
 				<li class="dropdown has-subnav {{ active }}">
 					<a href="{{ site.baseurl }}/">Activities To Do</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
@@ -62,8 +62,6 @@
 				<li class="{{ active }}">
 					<a href="{{ site.baseurl }}/">Contact US</a>
 				</li>
-				
-				{% endfor %}
 
 			</ul>
 			<ul class="p2pu-logo">
