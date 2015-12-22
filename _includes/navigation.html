@@ -24,7 +24,7 @@
 						</a>
 					</li>
 				{% endfor %}
-				<li class="dropdown has-subnav">
+				<li class="dropdown has-subnav {% if page.categories[1] == module %}active{% endif %}">
 					<a href="{{ site.baseurl }}/">Activities To Do</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.activitiesmodules %}
@@ -37,7 +37,7 @@
 						{% endfor %}
 					</ul>
 				</li>
-				<li class="dropdown has-subnav">
+				<li class="dropdown has-subnav {% if page.categories[1] == module %}active{% endif %}">
 					<a href="{{ site.baseurl }}/">Skills Training</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.skillsmodules %}
@@ -50,7 +50,7 @@
 						{% endfor %}
 					</ul>
 				</li>
-				<li>
+				<li class="{% if page.categories[1] == module %}active{% endif %}">
 					<a href="{{ site.baseurl }}/">Contact US</a>
 				</li>
 				
