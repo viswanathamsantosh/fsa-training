@@ -27,7 +27,7 @@
 				{% endfor %}
 				
 				<li class="dropdown has-subnav">
-					<a href="#">Activities To Do</a>
+					<a href="{{ site.baseurl }}/" class="dropdown-item">Activities To Do</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.activitiesmodules %}
 							{% assign first_post = site.categories[module]|reverse|first %}
@@ -41,7 +41,7 @@
 					</ul>
 				</li>
 				<li class="dropdown has-subnav">
-					<a href="#">Skills Training</a>
+					<a href="{{ site.baseurl }}/" class="dropdown-item">Skills Training</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.skillsmodules %}
 							{% assign first_post = site.categories[module]|reverse|first %}
