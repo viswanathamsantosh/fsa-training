@@ -17,24 +17,24 @@
 {% for m in site.data.course.activitiesmodules %}
 	{% if m == module and forloop.first != true %}
 		{% assign p = forloop.index0 | minus:1  %}
-		{% assign prev = site.data.course.modules[p] %}
+		{% assign prev = site.data.course.activitiesmodules[p] %}
 		{% assign prev_post = site.categories[prev]|reverse|first %}
 	{% endif %}
 	{% if m == module and forloop.last != true %}
 		{% assign n = forloop.index0 | plus:1  %}
-		{% assign next = site.data.course.modules[n] %}
+		{% assign next = site.data.course.activitiesmodules[n] %}
 		{% assign next_post = site.categories[next]|reverse|first %}
 	{% endif %}
 {% endfor %}
 {% for m in site.data.course.skillsmodules %}
 	{% if m == module and forloop.first != true %}
 		{% assign p = forloop.index0 | minus:1  %}
-		{% assign prev = site.data.course.modules[p] %}
+		{% assign prev = site.data.course.skillsmodules[p] %}
 		{% assign prev_post = site.categories[prev]|reverse|first %}
 	{% endif %}
 	{% if m == module and forloop.last != true %}
 		{% assign n = forloop.index0 | plus:1  %}
-		{% assign next = site.data.course.modules[n] %}
+		{% assign next = site.data.course.skillsmodules[n] %}
 		{% assign next_post = site.categories[next]|reverse|first %}
 	{% endif %}
 {% endfor %}
