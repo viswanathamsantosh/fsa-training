@@ -26,12 +26,7 @@
 					</li>
 				{% endfor %}
 				
-				
-				{% assign active = nil %}
-				{% if page.url contains link.url %}
-					{% assign active = 'active' %}
-				{% endif %}	
-				<li class="dropdown has-subnav {{ active }}">
+				<li class="dropdown has-subnav">
 					<a href="#">Activities To Do</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.activitiesmodules %}
@@ -45,7 +40,7 @@
 						{% endfor %}
 					</ul>
 				</li>
-				<li class="dropdown has-subnav {{ active }}">
+				<li class="dropdown has-subnav">
 					<a href="#">Skills Training</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.skillsmodules %}
