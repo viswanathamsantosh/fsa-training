@@ -1,3 +1,5 @@
 title: FSA Training
 description: FSA Training
-modules: [getting started, start a club, things you'll need, contact us]
+modules: [getting started, start a club, things you'll need]
+activitiesmodules: [online activity kits, introduction session kit, offline activity kits, recognition system dive]
+skillsmodules: [communication etiquette, public speaking, conflict management, developer resources]
