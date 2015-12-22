@@ -32,7 +32,7 @@
 					{% assign active = 'active' %}
 				{% endif %}	
 				<li class="dropdown has-subnav {{ active }}">
-					<a href="{{ site.baseurl }}/">Activities To Do</a>
+					<a href="#">Activities To Do</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.activitiesmodules %}
 							{% assign first_post = site.categories[module]|reverse|first %}
@@ -46,7 +46,7 @@
 					</ul>
 				</li>
 				<li class="dropdown has-subnav {{ active }}">
-					<a href="{{ site.baseurl }}/">Skills Training</a>
+					<a href="#">Skills Training</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.skillsmodules %}
 							{% assign first_post = site.categories[module]|reverse|first %}
