@@ -26,37 +26,35 @@
 					</li>
 				{% endfor %}
 				
-				<li class="dropdown has-subnav">
-					<a href="{{ site.baseurl }}/" class="dropdown-item">Activities To Do</a>
-					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
-						{% for module in site.data.course.activitiesmodules %}
-							{% assign first_post = site.categories[module]|reverse|first %}
-							<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
-								<a href="{{ site.baseurl }}{{ first_post.url }}"
-						   		    class="dropdown-item">
-									{{ module }}
-								</a>
-							</li>
-						{% endfor %}
-					</ul>
-				</li>
-				<li class="dropdown has-subnav">
-					<a href="{{ site.baseurl }}/" class="dropdown-item">Skills Training</a>
-					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
-						{% for module in site.data.course.skillsmodules %}
-							{% assign first_post = site.categories[module]|reverse|first %}
-							<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
-								<a href="{{ site.baseurl }}{{ first_post.url }}"
-						   	    	    class="dropdown-item">
-									{{ module }}
-								</a>
-							</li>
-						{% endfor %}
-					</ul>
-				</li>
-				<li class="{{ active }}">
-					<a href="{{ site.baseurl }}/">Contact US</a>
-				</li>
+				<li class="active dropdown has-subnav">
++					<a href="{{ site.baseurl }}/">Activities To Do</a>
++					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
++						{% for module in site.data.course.activitiesmodules %}
++							{% assign first_post = site.categories[module]|reverse|first %}
++							<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
++								<a href="{{ site.baseurl }}{{ first_post.url }}">
++									{{ module }}
++								</a>
++							</li>
++						{% endfor %}
++					</ul>
++				</li>
++				<li class="active dropdown has-subnav">
++					<a href="{{ site.baseurl }}/">Skills Training</a>
++					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
++						{% for module in site.data.course.skillsmodules %}
++							{% assign first_post = site.categories[module]|reverse|first %}
++							<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
++								<a href="{{ site.baseurl }}{{ first_post.url }}">
++									{{ module }}
++								</a>
++							</li>
++						{% endfor %}
++					</ul>
++				</li>
++				<li>
++					<a href="{{ site.baseurl }}/">Contact US</a>
++				</li>
 
 			</ul>
 			<ul class="p2pu-logo">
