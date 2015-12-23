@@ -17,7 +17,10 @@
 					<a href="{{ site.baseurl }}"><i class="fa fa-home"></i></a>
 				</li>
 								
-				
+				{% assign todoactive = nil %}
+					{% if 'online activity kits' or 'introduction session kit' or 'offline activity kits' or 'recognition system' in request.path %}
+						{% assign todoactive = 'active' %}
+					{% endif %}
 				
 				<li class="{{ todoactive }} dropdown has-subnav">
 					<a href="{{ site.baseurl }}/modules/online activity kits/online-activities/">Activities To Do</a>
@@ -43,10 +46,7 @@
 					</li>
 				{% endfor %}
 				
-				{% assign skillsactive = nil %}
-					{% if page.url contains 'communication etiquette' or 'public speaking' or 'conflict management' or 'developer resources' %}
-						{% assign skillsactive = 'active' %}
-					{% endif %}
+				
 					
 				<li class="{{ skillsactive }} dropdown has-subnav">
 					<a href="{{ site.baseurl }}/modules/communication etiquette/online-activities/">Skills Training</a>
