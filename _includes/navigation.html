@@ -17,10 +17,7 @@
 					<a href="{{ site.baseurl }}"><i class="fa fa-home"></i></a>
 				</li>
 								
-				{% assign todoactive = nil %}
-					{% if 'online activity kits' or 'introduction session kit' or 'offline activity kits' or 'recognition system' in request.path %}
-						{% assign todoactive = 'active' %}
-					{% endif %}
+				
 				
 				<li class="{{ todoactive }} dropdown has-subnav">
 					<a href="{{ site.baseurl }}/modules/online activity kits/online-activities/">Activities To Do</a>
