@@ -1,35 +1,36 @@
 
-  - text: Getting Started
-    url: /modules/getting started/introduction/
-    submenu:
-    - text: Learning Circles
-      url: /en/learning-circles/
-    - text: Projects
-      url: /en/our-work/
+- text: Getting Started
+  url: /modules/getting started/introduction/
+    
+- text: Activities To Do
+  url: /module/online activity kits/online-activities/
+  submenu:
+  - text: Online Activity Kits
+    url: /module/online activity kits/online-activities/
+  - text: Introduction Session Kit
+    url: /modules/introduction session kit/online-activities/
+  - text: Offline Activity Kits
+    url: /module/online activity kits/online-activities/
+  - text: Rrecognition System Dive
+    url: /modules/recognition system/online-activities/
+    
+- text: Start a Club
+  url: /modules/start a club/introduction/
+    
+- text: Things You'll Need
+  url: /modules/things you'll need/introduction/
 
-  - text: About
-    url: /en/about/
-    submenu:
-    - text: Philosophy
-      url: /en/about/philosophy/
-    - text: People
-      url: /en/about/people/
-    - text: Credits and thanks
-      url: /en/about/credits/
+- text: Skills Training
+  url: /modules/communication etiquette/online-activities/
+  submenu:
+  - text: Communication Etiquette
+    url: /modules/communication etiquette/online-activities/
+  - text: Public Speaking
+    url: /modules/public speaking/introduction/
+  - text: Conflict Management
+    url: /module/conflict management/online-activities/
+  - text: Developer Resources
+    url: /modules/developer resources/introduction/
 
-  - text: Publications
-    url: /en/publications/roundtables/
-    submenu:
-    - text: P2PU Roundtables
-      url: /en/publications/roundtables/
-    - text: Presentations
-      url: /en/publications/talks/
-    - text: Reports
-      url: http://reports.p2pu.org/
-    - text: Blog
-      url: http://info.p2pu.org/
-    - text: Data
-      url: http://data.p2pu.org/
-
-  - text: Connect with us
-    url: /en/connect/
+- text: Connect Us
+  url: /
