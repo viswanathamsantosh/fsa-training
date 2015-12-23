@@ -18,7 +18,7 @@
 				</li>
 								
 				{% assign todoactive = nil %}
-					{% if 'communication etiquette' or 'public speaking' or 'conflict management' or 'developer resources' in request.path %}
+					{% if 'online activity kits' or 'introduction session kit' or 'offline activity kits' or 'recognition system' in request.path %}
 						{% assign todoactive = 'active' %}
 					{% endif %}
 				
@@ -47,7 +47,7 @@
 				{% endfor %}
 				
 				{% assign skillsactive = nil %}
-					{% if page.url contains 'online activity kits' or 'introduction session kit' or 'offline activity kits' or 'recognition system' %}
+					{% if page.url contains 'communication etiquette' or 'public speaking' or 'conflict management' or 'developer resources' %}
 						{% assign skillsactive = 'active' %}
 					{% endif %}
 					
