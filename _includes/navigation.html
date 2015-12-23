@@ -1,24 +1,17 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
 
-<nav class="navbar navbar-default" role="navigation" id="home">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<a href="#" class="navbar-toggle" data-toggle="collapse" data-target="#p2pu-menu">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<a class="navbar-toggle" data-toggle="collapse"
-			        data-target="#nav-links-collapse">
-				<i class="fa fa-bars"></i>
-			</a>
-			<a class="navbar-logo" href="{{ site.baseurl }}/{{language}}/">
-				<img src="{{ site.baseurl }}/assets/images/p2pu-logo.png" alt="P2PU Logo" />
-			</a>
-			<a class="p2pu-tab" href="#">
-				<i class="fa fa-chevron-down p2pu-tab-icon"></i>
-			</a>
-		</div>
-
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="nav-links-collapse">
-
-			<ul class="nav navbar-nav navbar-right">
+		<div class="collapse navbar-collapse" id="p2pu-menu">
+			<ul class="nav navbar-nav">
         {% assign navigation=site.data.navigation %}
 				{% for link in navigation %}
 					{% assign active = nil %}
@@ -58,11 +51,6 @@
 						{% endif %}
 					</li>
 				{% endfor %}
-				<li>
-					<div class="donate-btn-wrap">
-						<a class="donate" href="{{ site.baseurl }}/en/donate/">Donate</a>
-					</div>
-				</li>
 			</ul>
 
 		</div>
