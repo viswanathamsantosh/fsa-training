@@ -18,7 +18,7 @@
 				</li>
 								
 				{% assign todoactive = nil %}
-					{% if page.url contains 'communication etiquette' or 'public speaking' or 'conflict management' or 'developer resources' %}
+					{% if 'communication etiquette' or 'public speaking' or 'conflict management' or 'developer resources' in request.path %}
 						{% assign todoactive = 'active' %}
 					{% endif %}
 				
