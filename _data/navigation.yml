@@ -3,14 +3,14 @@
   url: /modules/getting started/introduction/
     
 - text: Activities To Do
-  url: /module/online activity kits/online-activities/
+  url: /modules/online activity kits/online-activities/
   submenu:
   - text: Online Activity Kits
-    url: /module/online activity kits/online-activities/
+    url: /modules/online activity kits/online-activities/
   - text: Introduction Session Kit
     url: /modules/introduction session kit/online-activities/
   - text: Offline Activity Kits
-    url: /module/online activity kits/online-activities/
+    url: /modules/online activity kits/online-activities/
   - text: Rrecognition System Dive
     url: /modules/recognition system/online-activities/
     
@@ -28,7 +28,7 @@
   - text: Public Speaking
     url: /modules/public speaking/introduction/
   - text: Conflict Management
-    url: /module/conflict management/online-activities/
+    url: /modules/conflict management/online-activities/
   - text: Developer Resources
     url: /modules/developer resources/introduction/
 
