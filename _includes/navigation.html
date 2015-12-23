@@ -18,7 +18,7 @@
 				</li>
 								
 				{% assign todoactive = nil %}
-					{% if 'online activity kits' or 'introduction session kit' or 'offline activity kits' or 'recognition system' in request.path %}
+					{% if 'online' or 'introduction' or 'offline' or 'recognition' in request.path %}
 						{% assign todoactive = 'active' %}
 					{% endif %}
 				
@@ -46,7 +46,10 @@
 					</li>
 				{% endfor %}
 				
-				
+				{% assign skillsactive = nil %}
+					{% if page.url contains 'etiquette' or 'speaking' or 'conflict' or 'developer' %}
+						{% assign skillsactive = 'active' %}
+					{% endif %}
 					
 				<li class="{{ skillsactive }} dropdown has-subnav">
 					<a href="{{ site.baseurl }}/modules/communication etiquette/online-activities/">Skills Training</a>
