@@ -14,7 +14,7 @@
 		<div class="collapse navbar-collapse" id="nav-links-collapse">
 
 			<ul class="nav navbar-nav navbar-right">
-        
+        {% assign navigation=site.data.navigation[language] %}
 				{% for link in navigation %}
 					{% assign active = nil %}
 
