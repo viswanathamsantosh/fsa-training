@@ -14,7 +14,7 @@
 		<div class="collapse navbar-collapse" id="nav-links-collapse">
 
 			<ul class="nav navbar-nav navbar-right">
-        {% assign navigation=site.data.navigation[language] %}
+        {% assign navigation=site.data.navigation %}
 				{% for link in navigation %}
 					{% assign active = nil %}
 
@@ -53,11 +53,7 @@
 						{% endif %}
 					</li>
 				{% endfor %}
-				<li>
-					<div class="donate-btn-wrap">
-						<a class="donate" href="{{ site.baseurl }}/en/donate/">Donate</a>
-					</div>
-				</li>
+				
 			</ul>
 
 		</div>
