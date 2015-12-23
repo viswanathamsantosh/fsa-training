@@ -20,12 +20,12 @@
 					{% assign active = nil %}
 
 					{% for sublink in link.submenu %}
-						{% if page.url == {{ site.baseurl }}{{ sublink.url }} %}
+						{% if page.url == '{{ site.baseurl }}{{ sublink.url }}' %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
 
-					{% if page.url == {{ site.baseurl }}{{ link.url }} %}
+					{% if page.url == '{{ site.baseurl }}{{ link.url }}' %}
 						{% assign active = 'active' %}
 					{% endif %}
 
