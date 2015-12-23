@@ -20,12 +20,12 @@
 					{% assign active = nil %}
 
 					{% for sublink in link.submenu %}
-						{% if page.categories[1] contains sublink.url %}
+						{% if page.url contains sublink.url %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
 
-					{% if page.categories[1] contains link.url %}
+					{% if page.url contains link.url %}
 						{% assign active = 'active' %}
 					{% endif %}
 
