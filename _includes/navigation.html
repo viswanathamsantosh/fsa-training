@@ -25,7 +25,7 @@
 						{% endif %}
 					{% endfor %}
 
-					{% if page.url contains link.url %}
+					{% if link.url in request.path %}
 						{% assign active = 'active' %}
 					{% endif %}
 
