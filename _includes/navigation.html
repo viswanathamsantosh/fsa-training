@@ -12,7 +12,10 @@
 	<div class="container">
 		<div class="collapse navbar-collapse" id="p2pu-menu">
 			<ul class="nav navbar-nav">
-        {% assign navigation=site.data.navigation %}
+				<li>
+					<a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
+				</li>
+        			{% assign navigation=site.data.navigation %}
 				{% for link in navigation %}
 					{% assign active = nil %}
 
@@ -27,11 +30,9 @@
 					{% endif %}
 
 					<li class="{{ active }}{% if link.submenu %} dropdown has-subnav{% endif %}">
-						<a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
+						<a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-item">{{ link.text }}</a>
 
 						{% if link.submenu %}
-							<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block"
-							      data-toggle="dropdown"></span>
 							<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 								{% for sublink in link.submenu %}
 									<li {% if page.url contains sublink.url %}class="active"{% endif %}>
