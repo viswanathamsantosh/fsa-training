@@ -23,7 +23,7 @@
 					{% endif %}
 				
 				<li class="{{ todoactive }} dropdown has-subnav">
-					<a href="{{ site.baseurl }}//modules/online activity kits/online-activities/">Activities To Do</a>
+					<a href="{{ site.baseurl }}/modules/online activity kits/online-activities/">Activities To Do</a>
 					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 						{% for module in site.data.course.activitiesmodules %}
 							{% assign first_post = site.categories[module]|reverse|first %}
