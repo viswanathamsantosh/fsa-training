@@ -3,3 +3,41 @@ description: FSA Training
 modules: [getting started, start a club, things you'll need]
 activitiesmodules: [online activity kits, introduction session kit, offline activity kits, recognition system]
 skillsmodules: [communication etiquette, public speaking, conflict management, developer resources]
+
+
+en:
+    - text: Getting Started
+        url: /modules/getting started/introduction/
+        
+    - text: Activities To Do
+      url: /module/online activity kits/online-activities/
+      submenu:
+      - text: Online Activity Kits
+        url: /module/online activity kits/online-activities/
+      - text: Introduction Session Kit
+        url: /modules/introduction session kit/online-activities/
+      - text: Offline Activity Kits
+        url: /module/online activity kits/online-activities/
+      - text: Rrecognition System Dive
+        url: /modules/recognition system/online-activities/
+        
+    - text: Start a Club
+        url: /modules/start a club/introduction/
+        
+    - text: Things You'll Need
+        url: /modules/things you'll need/introduction/
+    
+    - text: Skills Training
+      url: /modules/communication etiquette/online-activities/
+      submenu:
+      - text: Communication Etiquette
+        url: /modules/communication etiquette/online-activities/
+      - text: Public Speaking
+        url: /modules/public speaking/introduction/
+      - text: Conflict Management
+        url: /module/conflict management/online-activities/
+      - text: Developer Resources
+        url: /modules/developer resources/introduction/
+    
+    - text: Connect Us
+      url: /
