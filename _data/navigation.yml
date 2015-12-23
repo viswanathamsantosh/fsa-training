@@ -1,6 +1,6 @@
 
-  - text: Our Work
-    url: /en/learning-circles/
+  - text: Getting Started
+    url: /modules/getting started/introduction/
     submenu:
     - text: Learning Circles
       url: /en/learning-circles/
