@@ -15,22 +15,22 @@
 				<li>
 					<a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
 				</li>
-        			{% assign navigation=site.data.navigation %}
+        			{% assign navigation = site.data.navigation %}
 				{% for link in navigation %}
 					{% assign active = nil %}
 
 					{% for sublink in link.submenu %}
-						{% if page.url contains sublink.url %}
+						{% if page.categories[1] contains sublink.url %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
 
-					{% if page.url contains link.url %}
+					{% if page.categories[1] contains link.url %}
 						{% assign active = 'active' %}
 					{% endif %}
 
 					<li class="{{ active }}{% if link.submenu %} dropdown has-subnav{% endif %}">
-						<a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-item">{{ link.text }}</a>
+						<a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
 
 						{% if link.submenu %}
 							<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
