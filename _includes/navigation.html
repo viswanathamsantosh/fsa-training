@@ -20,7 +20,7 @@
 					{% assign active = nil %}
 
 					{% for sublink in link.submenu %}
-						{% if page.url contains sublink.url %}
+						{% if sublink.url in request.path %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
