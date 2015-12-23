@@ -20,22 +20,22 @@
 					{% assign active = nil %}
 
 					{% for sublink in link.submenu %}
-						{% if sublink.url in request.path %}
+						{% if page.url contains sublink.url %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
 
-					{% if link.url in request.path %}
+					{% if page.url contains link.url %}
 						{% assign active = 'active' %}
 					{% endif %}
 
-					<li class="{{ active }}{% if page.categories[1] == module %}active{% endif %} {% if link.submenu %} dropdown has-subnav{% endif %}">
+					<li class="{{ active }} {% if link.submenu %} dropdown has-subnav{% endif %}">
 						<a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
 
 						{% if link.submenu %}
 							<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 								{% for sublink in link.submenu %}
-									<li {% if page.categories[1] == module %}class="active"{% endif %} {% if page.url contains sublink.url %}class="active"{% endif %}>
+									<li {% if page.url contains sublink.url %}class="active"{% endif %}>
 										{% if sublink.url contains 'http://' or sublink.url contains '#' %}
 											<a href="{{ sublink.url }}"
 													{% if sublink.url contains 'http://'%}target="_blank"{% endif %}>
