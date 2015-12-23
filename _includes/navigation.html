@@ -16,25 +16,6 @@
 				<li>
 					<a href="{{ site.baseurl }}"><i class="fa fa-home"></i></a>
 				</li>
-								
-				{% assign todoactive = nil %}
-					{% if 'online' or 'introduction' or 'offline' or 'recognition' in request.path %}
-						{% assign todoactive = 'active' %}
-					{% endif %}
-				
-				<li class="{{ todoactive }} dropdown has-subnav">
-					<a href="{{ site.baseurl }}/modules/online activity kits/online-activities/">Activities To Do</a>
-					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
-						{% for module in site.data.course.activitiesmodules %}
-							{% assign first_post = site.categories[module]|reverse|first %}
-							<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
-								<a href="{{ site.baseurl }}{{ first_post.url }}">
-									{{ module }}
-								</a>
-							</li>
-						{% endfor %}
-					</ul>
-				</li>
 				
 				{% for module in site.data.course.modules %}
 					{% assign first_post = site.categories[module]|reverse|first %}
@@ -67,6 +48,25 @@
 				
 				<li>
 					<a href="{{ site.baseurl }}/">Contact US</a>
+				</li>
+				
+				{% assign todoactive = nil %}
+					{% if 'online' or 'introduction' or 'offline' or 'recognition' in request.path %}
+						{% assign todoactive = 'active' %}
+					{% endif %}
+				
+				<li class="{{ todoactive }} dropdown has-subnav">
+					<a href="{{ site.baseurl }}/modules/online activity kits/online-activities/">Activities To Do</a>
+					<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
+						{% for module in site.data.course.activitiesmodules %}
+							{% assign first_post = site.categories[module]|reverse|first %}
+							<li class="dropdown {% if page.categories[1] == module %}active{% endif %} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %}">
+								<a href="{{ site.baseurl }}{{ first_post.url }}">
+									{{ module }}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
 				</li>
 
 			</ul>
