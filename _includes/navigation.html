@@ -18,17 +18,17 @@
 				
         			{% assign navigation = site.data.navigation %}
 				{% for link in navigation %}
-					{% assign active = 'active' %}
+					{% assign tactive = 'nil' %}
 					{% for sublink in link.submenu %}
 						{% if page.url contains sublink.url %}
-							{% assign active = 'active' %}
+							{% assign tactive = 'active' %}
 						{% endif %}
 					{% endfor %}
 					{% if page.url contains link.url %}
-						{% assign active = 'active' %}
+						{% assign tactive = 'active' %}
 					{% endif %}
 
-					<li class="{{ active }}{% if link.submenu %} dropdown has-subnav{% endif %}">
+					<li class="{{ tactive }}{% if link.submenu %} dropdown has-subnav{% endif %}">
 						<a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
 
 						{% if link.submenu %}
