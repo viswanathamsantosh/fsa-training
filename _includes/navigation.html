@@ -36,7 +36,7 @@
 							      data-toggle="dropdown"></span>
 							<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 								{% for sublink in link.submenu %}
-									<li {% if sublink.url == page.categories[1] %}class="active"{% endif %}>
+									<li {% if page.categories[1] == sublink.url %}class="active"{% endif %}>
 										{% if sublink.url contains 'http://' or sublink.url contains '#' %}
 											<a href="{{ sublink.url }}"
 													{% if sublink.url contains 'http://'%}target="_blank"{% endif %}>
