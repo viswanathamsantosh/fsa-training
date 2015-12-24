@@ -15,17 +15,15 @@
 				<li>
 					<a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
 				</li>
-				{% assign men = 'menu' %}
-        			{% assign navigation=site.data.navigation.[men] %}
+				
+        			{% assign navigation = site.data.navigation %}
 				{% for link in navigation %}
 					{% assign active = 'active' %}
-
 					{% for sublink in link.submenu %}
 						{% if page.url contains sublink.url %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
-
 					{% if page.url contains link.url %}
 						{% assign active = 'active' %}
 					{% endif %}
