@@ -15,7 +15,8 @@
 				<li>
 					<a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
 				</li>
-        			{% assign navigation=site.data.navigation.menu %}
+				{% assign men = 'menu' %}
+        			{% assign navigation=site.data.navigation.[men] %}
 				{% for link in navigation %}
 					{% assign active = nil %}
 
