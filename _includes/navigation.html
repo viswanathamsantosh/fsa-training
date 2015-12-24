@@ -29,7 +29,7 @@
 					{% endif %}
 
 					<li class="{{ active }}{% if link.submenu %} dropdown has-subnav{% endif %}">
-						<a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
+						<a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}}P</a>
 
 						{% if link.submenu %}
 							<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block"
@@ -44,7 +44,7 @@
 											</a>
 										{% else %}
 												<a href="{{ site.baseurl }}{{ sublink.url }}">
-													{{ sublink.text }}PL
+													{{ sublink.text }
 												</a>
 										{% endif %}
 									</li>
