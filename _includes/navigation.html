@@ -18,7 +18,7 @@
 				{% assign men = 'menu' %}
         			{% assign navigation=site.data.navigation.[men] %}
 				{% for link in navigation %}
-					{% assign active = nil %}
+					{% assign active = 'active' %}
 
 					{% for sublink in link.submenu %}
 						{% if page.url contains sublink.url %}
