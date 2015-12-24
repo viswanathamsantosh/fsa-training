@@ -20,11 +20,11 @@
 				{% for link in navigation %}
 					{% assign active = nil %}
 					{% for sublink in link.submenu %}
-						{% if site.url contains sublink.url %}
+						{% if page.url contains sublink.url %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
-					{% if site.url contains link.url %}
+					{% if page.url contains link.url %}
 						{% assign active = 'active' %}
 					{% endif %}
 
