@@ -1,41 +1,46 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default" role="navigation"  id="home">
-
-	<!-- Brand and toggle get grouped for better mobile display -->
-	<div class="navbar-header">
-		<a href="#" class="navbar-toggle" data-toggle="collapse" data-target="#p2pu-menu">
-			<i class="fa fa-bars"></i>
-		</a>
-	</div>
-
-	<!-- Collect the nav links, forms, and other content for toggling -->
+<nav class="navbar navbar-default" role="navigation" id="home">
 	<div class="container">
-		<div class="collapse navbar-collapse" id="p2pu-menu">
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
-				</li>
-        			{% assign navigation = site.data.navigation %}
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<a class="navbar-toggle" data-toggle="collapse"
+			        data-target="#nav-links-collapse">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a class="navbar-logo" href="{{ site.baseurl }}/{{language}}/">
+				<img src="{{ site.baseurl }}/assets/images/p2pu-logo.png" alt="P2PU Logo" />
+			</a>
+			<a class="p2pu-tab" href="#">
+				<i class="fa fa-chevron-down p2pu-tab-icon"></i>
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="nav-links-collapse">
+
+			<ul class="nav navbar-nav navbar-right">
+        {% assign navigation=site.data.navigation[language] %}
 				{% for link in navigation %}
 					{% assign active = nil %}
 
 					{% for sublink in link.submenu %}
-						{% if page.url == '{{ site.baseurl }}{{ sublink.url }}' %}
+						{% if page.url contains sublink.url %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
 
-					{% if page.url == '{{ site.baseurl }}{{ link.url }}' %}
+					{% if page.url contains link.url %}
 						{% assign active = 'active' %}
 					{% endif %}
 
-					<li class="{{ active }} {% if link.submenu %} dropdown has-subnav{% endif %}">
+					<li class="{{ active }}{% if link.submenu %} dropdown has-subnav{% endif %}">
 						<a href="{{ site.baseurl }}{{ link.url }}">{{ link.text }}</a>
 
 						{% if link.submenu %}
+							<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block"
+							      data-toggle="dropdown"></span>
 							<ul class="dropdown-menu nav navbar-nav subnav" role="menu">
 								{% for sublink in link.submenu %}
-									<li {% if page.url == sublink.url %}class="active"{% endif %}>
+									<li {% if page.url contains sublink.url %}class="active"{% endif %}>
 										{% if sublink.url contains 'http://' or sublink.url contains '#' %}
 											<a href="{{ sublink.url }}"
 													{% if sublink.url contains 'http://'%}target="_blank"{% endif %}>
@@ -52,6 +57,11 @@
 						{% endif %}
 					</li>
 				{% endfor %}
+				<li>
+					<div class="donate-btn-wrap">
+						<a class="donate" href="{{ site.baseurl }}/en/donate/">Donate</a>
+					</div>
+				</li>
 			</ul>
 
 		</div>
@@ -59,3 +69,6 @@
 	</div>
 	<!-- /.container-fluid -->
 </nav>
+
+
+
