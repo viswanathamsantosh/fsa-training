@@ -44,6 +44,7 @@
 
 
 - text: Skills Training
+  base: /modules/
   url: communication etiquette
   tail: /online-activities/
   submenu:
@@ -69,6 +70,6 @@
 
 
 - text: Contact Us
-  base: #
-  url: 
+  base: 
+  url: #
   tail: 
