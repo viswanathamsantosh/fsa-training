@@ -1,3 +1,6 @@
 .content img {
     max-width: 100%;
 }
+#tabzilla-panel #tabzilla-nav h2, #tabzilla-panel {
+    font-size: 1.3rem;
+}
