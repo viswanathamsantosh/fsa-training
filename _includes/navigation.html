@@ -29,7 +29,7 @@
 					{% endif %}
 
 					<li class="{{ active }}{% if link.submenu %} dropdown has-subnav{% endif %}">
-						<a href="{{ site.baseurl }}/modules/{{ link.url }}{{ link.tail }}">{{ link.text }}</a>
+						<a href="{{ site.baseurl }}{{ link.base }}{{ link.url }}{{ link.tail }}">{{ link.text }}{% if link.submenu %}<b class="caret"></b>{% endif %}</a>
 
 						{% if link.submenu %}
 							<span class="fa fa-caret-down dropdown-toggle visible-xs-block visible-sm-block"
@@ -43,7 +43,7 @@
 												{{ sublink.text }}
 											</a>
 										{% else %}
-												<a href="{{ site.baseurl }}/modules/{{ sublink.url }}{{ sublink.tail }}">
+												<a href="{{ site.baseurl }}{{ link.base }}{{ sublink.url }}{{ sublink.tail }}">
 													{{ sublink.text }}
 												</a>
 										{% endif %}
@@ -53,9 +53,6 @@
 						{% endif %}
 					</li>
 				{% endfor %}
-				<li>
-					<a href="{{ site.baseurl }}/">Contact US</a>
-				</li>
 			</ul>
 
 		</div>
