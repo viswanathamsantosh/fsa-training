@@ -22,7 +22,7 @@
 
 	<link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
 	<link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
-
+	<link href="https://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/p2pustrap-custom.css" />
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/site.css" />
   {% if page.extra_css %}
@@ -36,7 +36,7 @@
 </head>
 <body {% if page.itemtype %}itemscope itemtype="{{ page.itemtype }}"{% endif %}
       class="{{ page.body-class }}">
-
+<a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
 {% include navigation.html %}
 
 {{ content }}
@@ -78,7 +78,7 @@
 </script>
 <script src="https://apis.google.com/js/client.js?onload=get_calendar"></script>
 {% endif %}
-
+<script src="https://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 <!-- Google Analytics -->
 {% if site.ga_tracking_code or site.p2pu_ga_tracking_code %}
 	{% include ga.html %}
