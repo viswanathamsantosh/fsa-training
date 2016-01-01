@@ -4,33 +4,29 @@ title: About Mozilla
 
 # About Mozilla
 
-{% comment %}
-![Image of maze with starting point indicated]({{site.baseurl}}/img/start.jpg)
-Image [CC-BY-SA](https://creativecommons.org/licenses/by-sa/2.0/) by [mikecogh](https://www.flickr.com/photos/mikecogh/11300349426) on Flickr.
-{% endcomment %}
+Did you know that Mozilla is a non-profit organization? Many people think that with its popular products like Firefox and Firefox OS, Mozilla is just yet another tech company. But behold, we are a non-profit organization who builds awesome products to support our mission!
 
-The course is split in 4 modules: **community**, **learning on the web**, **content** and **feedback and assessment**.
+Watch this video to get to know the Mozilla story:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kmk43_2dtn0" frameborder="0" allowfullscreen></iframe>
 
-![Image of lego people]({{site.baseurl}}/img/modules.jpg)
-Leftmost image, [CC-BY-SA](https://creativecommons.org/licenses/by/2.0/) [Peter Dutton](https://www.flickr.com/photos/joeshlabotnik/) 
+For more details of the history, you can read [through this timeline.](https://www.mozilla.org/en-US/about/history/)
 
-Each module has outcomes directly related to building your course. Every module also have projects, reading and other resources to help you.
+## The Mozilla Mission
+>To build the Internet as a global public resource, open and accessible to all.
 
-## Work at your own pace, but not alone!
+by
 
-![]({{site.baseurl}}/img/cohort.png)
+>Promoting openness, innovation and opportunity on the Web.
 
-This is a self paced course. We tried to match the level of effort required for each module to be about 1 week, but you can always go through it quicker or slower.
+At Mozilla, you'll be hearing about the 'open Web' a lot. What does it mean? You may read this [very insightful blog post from Mark Surman, the Mozilla Foundation Executive Director](https://blog.mozilla.org/theden/2013/11/20/what-does-mozilla-firefox-mean-when-we-say-open/).
 
-**Doing the course at your own pace does not mean that you have to do the course on your own.** From past experience we know that people who create courses together are much more likely to succeed and enjoy doing it. Doing it alone can easily feel like pulling teeth.
+**You can know more about the mission by reading the [Mozilla Manifesto](https://www.mozilla.org/en-US/about/manifesto/).**
 
-## The course forum (community.p2pu.org)
+## The Mozilla Community
 
-[community.p2pu.org](http://community.p2pu.org) is where the community for this course gathers. Here you can ask any question, share your work or other interesting readings and meet people who are also building online courses to collaborate with.
+A huge part of Mozilla's success is its community of volunteer Mozillians, coming from different parts of the globe. They are superheroes who allot time to volunteer for Mozilla from contributing code to organizing events, along with balancing their day jobs! As an FSA, you're one of these superheroes who believe in doing good for the Web!
 
-[![]({{site.baseurl}}/img/community-forum.png)](http://community.p2pu.org)
+Watch this video to have an idea where Mozillians hail from:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LuyBGkbzTjs" frameborder="0" allowfullscreen></iframe>
 
-## Where do I go from here?
-
-1. [Introduce yourself]({{site.baseurl}}/modules/start/introduce-yourself/) on the forums.
-2. [Start building your course]({{site.baseurl}}/modules/start/create-your-course/). This step is not optional :)
+**Get in touch with your local community by checking out the [community directory here](https://www.mozilla.org/en-US/contact/communities/).**

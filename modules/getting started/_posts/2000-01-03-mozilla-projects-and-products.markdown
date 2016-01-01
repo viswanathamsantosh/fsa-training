@@ -1,21 +1,11 @@
 ---
 title: Mozilla Projects and Products
-extra_js:
-  - '/js/discourseGallery.js'
-  - '/js/discourseposters.js'
 ---
 
 # Mozilla Projects and Products
 
-<div id="topic-users">
-    <span>
-        <a class="profile-link" href="" target="_blank">
-            <img class="profile-image" src=""></img>
-        </a>
-    </span>
-</div>
-<!--button id='load-more-users'>Load more users</button-->
+All of Mozilla's products are open source, meaning you can contribute code or even create your own version! All of Mozilla's projects are on [Github](https://wiki.mozilla.org/Github) for you to see.
 
-<br/>
+## Mozilla Firefox
 
-<p><a class="btn btn-primary" href="http://community.p2pu.org/t/introduce-yourself/1549" target="_blank"><i class="fa fa-comments"></i> Tell your classmates about yourself</a></p>
+Firefox, being the best browser on the Internet, is the most popular Mozilla product.
